@@ -130,6 +130,23 @@ class Main
          *         
          */
         
+        System.out.println("**Task 6A**");
+        
+        for (int i=1; i<ar1.length-1; i++)
+            System.out.println(ar1[i]);
+            
+        System.out.println("**Task 6B**"); 
+           
+        for (int i=0; i<ar1.length; i++)
+            if (ar1[i]%2 == 1)
+                System.out.println(ar1[i]);
+                
+        System.out.println("**Task 6C**");
+                
+        for (int i=0; i<ar2.length; i++)
+            if (i%3 == 0)
+               System.out.println(ar1[i]);
+        
         /*
          * Task 7.  For each element in ar1, 
          *          If the element is even: leave alone
@@ -141,6 +158,14 @@ class Main
          *          ar[2]=30
          *          ar[3]=4
          */
+        
+        System.out.println("**Task 7**");
+        
+        for (int i=0; i<ar1.length; i++) {
+            if (ar1[i]%2==1)
+                ar1[i]=ar1[i]*10;
+            System.out.println(ar1[i]);
+        }
         
          /*
           * Task 8
