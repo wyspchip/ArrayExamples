@@ -181,8 +181,15 @@ class Main
          System.out.println("**Task 8**");
          
          int ar2odds[] = new int[n];
+         int k = 0;
          for (int i=0; i<ar2.length; i++) {
-             if (i%2==1) 
+             if (i%2==1) {
+                ar2odds[k] = ar2[i];
+                k++;
+            }
+        }
+        for (int i=0; i<k; i++)
+            System.out.println(ar2odds[i]);
                 
          
         /*
