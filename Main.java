@@ -293,11 +293,15 @@ class Main
         ar5[14] = "new";
         ar5[15] = "nation";
         
+        int fletter=0;
         int[] ar6 = new int[ar5.length];
         for (int i=0; i<ar5.length; i++) {
-            ar6[i] = ar5[i].length(ar5[i]);
+            ar6[i] = ar5[i].length();
             System.out.println(ar6[i]);
+            if (ar5[i].length()>5)
+                fletter++;
         }
+        System.out.println("Words with more than 5 letters: "+fletter);
         
         /*
          * Task 13
@@ -313,6 +317,24 @@ class Main
          * Use a for loop to print out the names of monster that start with
          * a vowel
          */
+        System.out.println("**Task 13**");
+        
+        String[] monsterArray = new String[5];
+        monsterArray[0]="Cookie";
+        monsterArray[1]="Grover";
+        monsterArray[2]="Oscar the Grouch";
+        monsterArray[3]="Elmo";
+        monsterArray[4]="Rosita";
+        
+        for (int i=0; i<monsterArray.length; i++) {
+            System.out.println(monsterArray[i]);
+        }
+            
+        System.out.println("Names that start with a vowel:");
+        for (int i=0; i<monsterArray.length; i++) {
+            if (monsterArray[i].startsWith("O") || monsterArray[i].startsWith("E"))
+                System.out.println(monsterArray[i]);
+            }
         
          /*
           * Task 14
