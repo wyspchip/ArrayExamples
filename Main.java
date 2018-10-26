@@ -319,12 +319,7 @@ class Main
          */
         System.out.println("**Task 13**");
         
-        String[] monsterArray = new String[5];
-        monsterArray[0]="Cookie";
-        monsterArray[1]="Grover";
-        monsterArray[2]="Oscar the Grouch";
-        monsterArray[3]="Elmo";
-        monsterArray[4]="Rosita";
+        String[] monsterArray = {"Cookie", "Grover", "Oscar the Grouch", "Elmo", "Rosita"};
         
         for (int i=0; i<monsterArray.length; i++) {
             System.out.println(monsterArray[i]);
@@ -351,6 +346,19 @@ class Main
           *      So arindex[0]=2
           *         arindex[1]=5
           */
+         System.out.println("**Task 14**");
+         
+         int x=0;
+         int[] arindex = new int[2];
+         int[] arx = {94, 95, 96, 97, 98, 99};
+         for (int i=0; i<arx.length; i++) {
+             if (arx[i]%3==0) {
+                 arindex[x]=i;
+                }
+            }
+         for (int i=0; i<arindex.length; i++)
+            System.out.println(arindex[i]);
+                 
          
          /*
           * Create an arrary called "fb" and calculate the
