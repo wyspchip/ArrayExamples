@@ -354,6 +354,7 @@ class Main
          for (int i=0; i<arx.length; i++) {
              if (arx[i]%3==0) {
                  arindex[x]=i;
+                 x++;
                 }
             }
          for (int i=0; i<arindex.length; i++)
@@ -369,6 +370,16 @@ class Main
           * fb[3]=fb[1]+fb[2]
           * fb[4]=fb[2]+fb[3]
           */
+        System.out.println("**Task 15**");
+        
+        int[] fb = new int[10];
+        fb[0]=1;
+        fb[1]=1;
+        for (int i=2; i<fb.length; i++) {
+            fb[i]=fb[i-2]+fb[i-1];
+        }
+        for (int i=0; i<fb.length; i++)
+            System.out.println(fb[i]);
         
     }
 }
