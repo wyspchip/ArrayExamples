@@ -326,9 +326,9 @@ class Main
         }
             
         System.out.println("Names that start with a vowel:");
-        for (int i=0; i<monsterArray.length; i++) {
-            if (monsterArray[i].startsWith("O") || monsterArray[i].startsWith("E"))
-                System.out.println(monsterArray[i]);
+        for (String i : monsterArray) {
+            if (i.startsWith("O") || i.startsWith("E"))
+                System.out.println(i);
             }
         
          /*
